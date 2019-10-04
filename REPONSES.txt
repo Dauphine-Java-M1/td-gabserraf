@@ -1,4 +1,3 @@
-wesh
 Serraf Gabriel
 TD1
 
@@ -42,7 +41,7 @@ Question 3 : gitk représente les deux dépots synchronisés par le texte "maste
 Question 5 : git me bloque car le code en ligne n'a pas été mis a jour dans mon dépot local
 car il y'a un conflit sur le fichier RESPONSES.txt et il me demande de choisir entre les modification apporté par le commit d'avant et celui de maintenant 
 	! [rejected]        master -> master (fetch first)
-	error: failed to push some refs to 'https://github.com/Dauphine-Java-M1/td-yossnacc'
+	error: failed to push some refs to 'https://github.com/Dauphine-Java-M1/td-gabserraf.git'
 	hint: Updates were rejected because the remote contains work that you do
 	hint: not have locally. This is usually caused by another repository pushing
 	hint: to the same ref. You may want to first integrate the remote changes
@@ -55,7 +54,5 @@ EXO3:
 Question 2 : On observe une petite fenetre qui s'ouvres sur le coté et qui affiche le résultat des tests
 	Si on change true par false on un une faillure dans les tests
 
-wesh
-	
 wesh
 
