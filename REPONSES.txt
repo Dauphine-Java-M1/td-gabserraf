@@ -1,3 +1,5 @@
+wesh
+
 Serraf Gabriel
 TD1
 
@@ -53,6 +55,6 @@ Question 7 : ça aurait crée un conflit et il aurait fallu choisir entre les mo
 EXO3:
 Question 2 : On observe une petite fenetre qui s'ouvres sur le coté et qui affiche le résultat des tests
 	Si on change true par false on un une faillure dans les tests
+	
 
-wesh
 
