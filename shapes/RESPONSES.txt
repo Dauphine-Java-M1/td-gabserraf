@@ -1,0 +1,47 @@
+Serraf Gabriel
+Yossef Nackache
+
+Exercice 1
+
+Question 1 : Cela fonctionne car il existe un constructeur par défaut qui initialise tout les entiers à 0 et car on peut accéder aux variables privées au sein de la même classe.
+
+Question 2 : Cela ne fonctionne pas car on n'a pas accès aux variables privées. On pourrait créer des fonctions qui renvoient les coordonnées avec des fonctions get.
+
+Question 3 : Ceci afin de protéger les variables et qu'on n'ait pas toujours accès pour les modifier.
+
+Question 4 : Un accesseur est une fonction qui modifie une variable privée. On ne doit pas le faire ici car on ne devrait pas besoin de modifier un point.
+
+Question 5 : Le problème est qu'une fois qu'on a créé un constructeur, le contructeur par défaut n'est plus pris en compte. Donc on doit changer le code dans le main.
+
+Question 6 : On peut confondre les x et y en paramètres avec les attributs x et y.
+
+Question 7 : On pourrait créer une variable statique qui s'incrémente à chaque création d'un objet.
+
+Exercice 2
+
+Question 1 : Il affiche true et false. La méthode equals n'étant pas redéfini et adapté à l'objet Point, Java compare donc les adresses références des variables et non pas les valeurs des coordonnées.
+
+Question 2 : IL renvoie -1 pour la variable p3. La méthode indexof appelle la méthode equals. Il faut donc la redéfinir.
+
+Exercice 3
+
+Question 2 : Si on n'ecrit pas de code supplementaire on ne pourra pas controler la capacite. Il faudrait donc ajouter un int appele max et on ajoutera dans la methode une condition qui verifie qu'on ne depasse pas la capacite.
+
+Question 4 : ON obtient false dans les deux cas.
+
+Exercice 4
+
+Question 1 : On peut soit renvoyer un nouveau point, soit modifier les coordonnées du point courant.
+
+Question 5 : On a le meme point pour les deux cercles. IL faut donc créer un  nouveau point auquel on appliquera la translation dans la méthode transale.
+
+Question 6 : On doit renvoyer dans la fonction getCenter un nouveau point en appelant le constructeur de la classe Point.
+
+Question 9 : On doit faire une methode statique car on ne fait pas appel sur un cercle mais sur plusieurs cercles.
+
+Excercice 5
+
+Question 4 : Il va faire appel a la methode toString de la classe Circle et n'affichera pas le rayon interne. Il faut donc redefinir la methode toString.
+
+
+
