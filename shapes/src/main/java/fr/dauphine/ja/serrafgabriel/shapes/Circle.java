@@ -15,6 +15,10 @@ public class Circle {
 	public Point getCenter() {
 		return new Point(p.getX(),p.getY());
 	}
+        
+        public int getRay(){
+            return this.rayon;
+        }
 	
 	@Override
 	public String toString() {
