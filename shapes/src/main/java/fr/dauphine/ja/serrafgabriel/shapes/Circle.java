@@ -22,7 +22,7 @@ public class Circle {
 	
 	@Override
 	public String toString() {
-		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.rayon + "et de surface " +  this.surface();
+		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.rayon + " et de surface " +  this.surface();
 	}
 	
 	public void translate(int dx, int dy) {
