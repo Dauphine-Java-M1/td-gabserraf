@@ -16,7 +16,7 @@ public class Circle {
 		return new Point(p.getX(),p.getY());
 	}
         
-        public int getRay(){
+        public int getRadius(){
             return this.rayon;
         }
 	

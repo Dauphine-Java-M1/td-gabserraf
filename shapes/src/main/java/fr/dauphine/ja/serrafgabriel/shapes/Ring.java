@@ -16,7 +16,7 @@ public class Ring extends Circle{
 		Ring ring = (Ring) obj;
                 if(ring.rayonInterne == this.rayonInterne){
                     if(ring.getCenter() == this.getCenter()){
-                        if(ring.getRay() == this.getRay()) return true;
+                        if(ring.getRadius() == this.getRadius()) return true;
                     }
                 }
                 return false;
