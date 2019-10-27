@@ -5,7 +5,8 @@ public class Ring extends Circle{
 	private int rayonInterne;
 	
 	public Ring(Point p, int rayon, int rayonInterne) {
-		super(p, rayon);
+                super(p, rayon);
+                if(rayonInterne > rayon) throw new IllegalArgumentException("The intern radius is not valid ! ");
 		this.rayonInterne = rayonInterne;
 	}
 	
@@ -41,7 +42,7 @@ public class Ring extends Circle{
 	
         public static boolean contains(Point p, Ring... rings){
             for(Ring ring : rings){
-                if(ring.contains(p)) return true;
+                if(ring != null && ring.contains(p)) return true;
             }
             return false;
         } 
