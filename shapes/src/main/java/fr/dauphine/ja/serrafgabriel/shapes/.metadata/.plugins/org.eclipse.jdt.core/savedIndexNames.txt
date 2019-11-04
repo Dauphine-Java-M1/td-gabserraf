@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/users/serrga16/javaavance/shapes/src/main/java/fr/dauphine/ja/serrafgabriel/shapes/.metadata/.plugins/org.eclipse.jdt.core
+646308851.index
+3618577824.index
+2224883514.index

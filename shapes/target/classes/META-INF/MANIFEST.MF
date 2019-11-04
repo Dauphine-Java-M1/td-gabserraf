@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: serrga16
+Build-Jdk: 11.0.4
+Main-Class: fr.dauphine.ja.serrafgabriel.shapes.Point
+Created-By: Maven Integration for Eclipse
+

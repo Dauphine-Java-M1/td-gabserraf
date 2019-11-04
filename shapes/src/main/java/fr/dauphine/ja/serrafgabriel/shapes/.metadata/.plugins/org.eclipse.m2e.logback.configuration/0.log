@@ -1,0 +1,45 @@
+2019-10-18 13:21:49,053 [Framework stop] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: /users/serrga16/javaavance/shapes/src/main/java/fr/dauphine/ja/serrafgabriel/shapes/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:127) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:935) ~[na:na]
+	at org.eclipse.m2e.core.internal.MavenPluginActivator.stop(MavenPluginActivator.java:302) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1016) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:359) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.Module.stop(Module.java:498) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1723) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1642) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:192) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.Module.stop(Module.java:498) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:210) ~[org.eclipse.osgi_3.13.0.v20180409-1500.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+2019-10-18 13:22:23,852 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-10-18 13:25:31,394 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+2019-10-18 13:25:31,446 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+2019-10-18 13:25:31,475 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+2019-10-18 13:25:31,518 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+2019-10-18 13:25:31,554 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+2019-10-18 13:25:31,571 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+2019-10-18 13:25:31,587 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+2019-10-18 13:25:31,597 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+2019-10-18 13:25:31,615 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+2019-10-18 13:25:31,624 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+2019-10-18 13:25:31,638 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+2019-10-18 13:25:31,647 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+2019-10-18 13:25:31,677 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+2019-10-18 13:25:31,727 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+2019-10-18 13:25:31,733 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+2019-10-18 13:25:31,743 [Worker-16: Installing artifact] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+2019-10-18 13:25:31,894 [Worker-16: Installing artifact] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing /users/serrga16/javaavance/shapes/target/shapes-1.0-SNAPSHOT.jar to /users/serrga16/.m2/repository/fr/dauphine/ja/serrafgabriel/shapes/shapes/0.0.1-SNAPSHOT/shapes-0.0.1-SNAPSHOT.jar
+2019-10-18 13:25:31,967 [Worker-16: Installing artifact] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing /users/serrga16/javaavance/shapes/pom.xml to /users/serrga16/.m2/repository/fr/dauphine/ja/serrafgabriel/shapes/shapes/0.0.1-SNAPSHOT/shapes-0.0.1-SNAPSHOT.pom

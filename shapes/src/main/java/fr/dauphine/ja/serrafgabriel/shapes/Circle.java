@@ -1,15 +1,18 @@
 package fr.dauphine.ja.serrafgabriel.shapes;
 
-import java.util.List;
 
 public class Circle {
 	
 	private Point p;
-	private int rayon;
+	private double radius;
 	
-	public Circle(Point p, int r) {
+	public Circle(Point p, double r) {
 		this.p = p;
-		this.rayon = r;
+		this.radius = r;
+	}
+	
+	public double getRadius() {
+		return this.radius;
 	}
 	
 	public Point getCenter() {
@@ -18,7 +21,7 @@ public class Circle {
 	
 	@Override
 	public String toString() {
-		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.rayon + "et de surface " +  this.surface();
+		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.radius + "et de surface " +  this.surface();
 	}
 	
 	public void translate(int dx, int dy) {
@@ -28,16 +31,18 @@ public class Circle {
 	}
 	
 	public double surface() {
-		return this.rayon* this.rayon * Math.PI;
+		return this.radius* this.radius * Math.PI;
 	}
 	
 	public boolean contains(Point p) {
 		double distance = Math.sqrt((p.getX() - this.p.getX())*(p.getX() - this.p.getX()) + (p.getY() - this.p.getY())*(p.getY() - this.p.getY()));
-		if(distance < this.rayon) {
+		if(distance < this.radius) {
 			return true;
 		}
 		return false;
 	}
+	
+
 	
 
 	
