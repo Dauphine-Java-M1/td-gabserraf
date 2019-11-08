@@ -19,17 +19,12 @@ public class Circle {
 		return new Point(p.getX(),p.getY());
 	}
         
-        public int getRadius(){
-            return this.rayon;
-        }
+
 	
 	@Override
 	public String toString() {
-<<<<<<< HEAD
+
 		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.radius + "et de surface " +  this.surface();
-=======
-		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.rayon + " et de surface " +  this.surface();
->>>>>>> 646324e5df556f0e6bed3e65294b8018615608d1
 	}
 	
 	public void translate(int dx, int dy) {
