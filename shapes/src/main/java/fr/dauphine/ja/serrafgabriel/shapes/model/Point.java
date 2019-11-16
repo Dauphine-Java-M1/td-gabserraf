@@ -1,13 +1,13 @@
-package fr.dauphine.ja.serrafgabriel.shapes;
+package fr.dauphine.ja.serrafgabriel.shapes.model;
 
+import fr.dauphine.ja.serrafgabriel.shapes.view.PointDrawer;
 import java.util.ArrayList;
 
 /**
  * 
  *
  */
-public class Point
-{
+public class Point extends Shape {
 	
 	private int x;
 	private int y;
@@ -15,6 +15,7 @@ public class Point
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
+                super.setDrawer(new PointDrawer(this));
 	}
 	
 	public Point(Point p) {
@@ -43,10 +44,17 @@ public class Point
 		return false;
 	}
 	
+      
+        @Override
 	public void translate(int dx, int dy) {
 		this.x += dy;
 		this.y += dx;
 	}
+
+        @Override
+        public boolean contains(Point p) {
+            return this.equals(p);
+        }
 }
 
 class TestPoint {

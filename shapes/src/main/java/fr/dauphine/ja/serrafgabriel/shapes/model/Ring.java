@@ -1,6 +1,10 @@
-package fr.dauphine.ja.serrafgabriel.shapes;
+package fr.dauphine.ja.serrafgabriel.shapes.model;
 
-public class Ring {
+import fr.dauphine.ja.serrafgabriel.shapes.model.Circle;
+import fr.dauphine.ja.serrafgabriel.shapes.model.Point;
+import fr.dauphine.ja.serrafgabriel.shapes.view.RingDrawer;
+
+public class Ring extends Shape {
 	
 	private Circle outerCircle;
 	private double innerRadius;
@@ -9,9 +13,18 @@ public class Ring {
 		outerCircle = new Circle(p, radius);
                 if(innerRadius > radius) throw new IllegalArgumentException("The intern radius is not valid ! ");
 		this.innerRadius = innerRadius;
+                super.setDrawer(new RingDrawer(this));
 
 	}
 	
+        public double getInnerRadius(){
+            return this.innerRadius;
+        }
+        
+        public Circle getOuterCircle(){
+            return this.outerCircle;
+        }
+        
 	@Override
 	public boolean equals(Object obj) {
 		if(obj == null) return false;
@@ -31,6 +44,7 @@ public class Ring {
 	 } 
 	 
 
+        @Override
         public boolean contains(Point p){
             Circle circle = new Circle(this.outerCircle.getCenter(), this.innerRadius);
             if(circle.contains(p)){
@@ -48,5 +62,10 @@ public class Ring {
             }
             return false;
         } 
+
+    @Override
+    public void translate(int dx, int dy) {
+        this.outerCircle.translate(dx, dy);
+    }
 
 }

@@ -1,7 +1,10 @@
-package fr.dauphine.ja.serrafgabriel.shapes;
+package fr.dauphine.ja.serrafgabriel.shapes.model;
+
+import fr.dauphine.ja.serrafgabriel.shapes.model.Point;
+import fr.dauphine.ja.serrafgabriel.shapes.view.CircleDrawer;
 
 
-public class Circle {
+public class Circle extends Shape {
 	
 	private Point p;
 	private double radius;
@@ -9,6 +12,7 @@ public class Circle {
 	public Circle(Point p, double r) {
 		this.p = p;
 		this.radius = r;
+                super.setDrawer(new CircleDrawer(this));
 	}
 	
 	public double getRadius() {
@@ -27,6 +31,7 @@ public class Circle {
 		return "Cercle de centre " + this.p.toString() + " et de rayon " + this.radius + "et de surface " +  this.surface();
 	}
 	
+        @Override
 	public void translate(int dx, int dy) {
 		Point tmp = new Point(p.getX(),p.getY());
 		tmp.translate(dx, dy);
@@ -37,6 +42,7 @@ public class Circle {
 		return this.radius* this.radius * Math.PI;
 	}
 	
+        @Override
 	public boolean contains(Point p) {
 		double distance = Math.sqrt((p.getX() - this.p.getX())*(p.getX() - this.p.getX()) + (p.getY() - this.p.getY())*(p.getY() - this.p.getY()));
 		if(distance < this.radius) {
@@ -44,10 +50,6 @@ public class Circle {
 		}
 		return false;
 	}
-	
-
-	
-
 	
 	public static boolean contains(Point p, Circle... circles) {
 		for(Circle c : circles) {
